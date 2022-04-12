@@ -1,0 +1,263 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body
+{
+    background: url(https://wallpapermemory.com/uploads/663/grey-background-hd-1080p-25875.jpg);
+    background-size:contain;
+}
+footer
+{
+    margin-top: 100%;
+    height: 170px;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li
+{
+    list-style: none;
+}
+footer .social_icon li a
+{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.15s;
+}
+footer .menu li a
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.60;
+}
+footer .menu li a:hover
+{
+    opacity: 1;
+}
+footer .social_icon li a:hover
+{
+   transform: translateY(-10px); 
+}
+footer p
+{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+ footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }   
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02 
+{
+    0%
+    {
+        background-position-x: 0px;
+    }   
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+.mainmenu li a
+{
+    text-decoration: none;
+    font-size: 3em;
+    color: #fff;
+    margin: 0 30px;
+    display: inline-block;
+    opacity: 0.60;
+}
+.mainmenu li a:hover
+{
+    opacity: 1;
+}
+.mainmenu li
+{
+    list-style: none;
+}
+.mainmenu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.container1
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.container1 .card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(96, 96, 96, 0.2);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+}
+.container1 .card .content
+{
+    position:relative;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container1 .card:hover .content
+{
+    opacity: 1;
+    transform: translateY(-10px);
+}
+.container1 .card .content .imgBx
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+.container1 .card .content .imgBx img
+{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container1 .card .content .contentBx h3
+{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0 0;
+    line-height: 0.5em;
+}
+.container1 .card .content .contentBx span
+{
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: initial;
+}
+.container1 .card .socialmedia
+{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+.container1 .card .socialmedia li
+{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+.container1 .card:hover .socialmedia li
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container1 .card .socialmedia li a
+{
+    color: #fff;
+    font-size: 24px;
+}
