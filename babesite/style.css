@@ -6,6 +6,51 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.thememode
+{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:root
+{
+    --black: #333;
+    --black2: #333;
+    --white: #fff;
+    --white: #fff;
+}
+.dark
+{
+    --black: #fff;
+    --black2: #444;
+    --white: #333;
+    --white: #444;
+}
+.thememode::before
+{
+    font-family: sans-serif;
+}
+.thememode::after
+{
+    content: 'Swith To Light Mode';
+    position: absolute;
+    left: 40px;
+    font-size: 0.7em;
+    color: var(--black);
+    white-space: nowrap;
+    font-weight: 300;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
 body
 {
     background: url(https://wallpapermemory.com/uploads/663/grey-background-hd-1080p-25875.jpg);
