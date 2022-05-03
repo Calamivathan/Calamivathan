@@ -1,0 +1,239 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* video
+{
+    width: 1519px;
+} */
+/* .fullscreen
+{
+    background: rgb(255, 0, 0);
+    height: 100vh;
+} */
+.header
+{
+    /* position:absolute; */
+    /* background: rgba(255, 255, 255, 0.207); */
+    width: 100%;
+    /* height: 15vh; */
+    background:rgba(253,251,252) ;
+    box-shadow:  0px 3px 10px 10px rgba(0, 0, 0, 0.152) ;
+    overflow:hidden;
+    white-space: nowrap;
+}
+.header .nav-logo
+{   display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    height: 80px;
+    max-height: 80px;
+}
+
+.menu
+{
+    /* position: fixed; */
+    margin: 10px 0px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu li a
+{
+    text-decoration: none;
+    color: rgba(1, 1, 1, 0.691);
+    font-size: calc(5px + 2vw);
+    font-family: sans-serif;
+    margin: 0 15px;
+    display: inline-block;
+    opacity: 0.60;
+}
+.menu li a:hover
+{
+    opacity: 100%;
+    transform: translateY(-10px) ;
+    transition: 0.50s;
+}
+.introvideo
+{
+    position:relative; 
+    /* height: 100vh;
+    width: 100vw; */
+    object-fit: cover;
+
+    top:0;  
+    left:0;  
+    right:0;  
+    bottom:0;
+    /* margin-top: 15vh; */
+    z-index: 0;
+}
+.toogle-btn
+{
+    position:absolute;
+    top: .2rem;
+    right: 0.2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toogle-btn .btn
+{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
+@media (max-width:415px)
+{
+    .toogle-btn
+    {
+        display: flex;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .header
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu li
+    {
+        text-align: center;
+    }
+    .menu li a 
+    {
+        padding: .5rem 1rem;
+    }
+    .menu.active
+    {
+        display: flex;
+    }
+    .introvideo
+    {
+        width: 415px;
+        height: 100%;
+    }
+    .contentexplore h1
+    {
+        font-size: 10px;
+    }
+}
+/* @media (max-aspect-ratio: 16/9)
+{
+    .introvideo
+    {
+        width: 90%;
+        height: 100%;
+    }
+} */
+.items-container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:space-between ;
+    bottom: 100px;
+    top: 20px;
+}
+.box-item
+{
+    position:relative;
+    width: 300px;
+    height: 450px;
+    margin: 30px;
+    margin-top: 70px;
+    border: 1px solid rgb(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0.061); */
+    border-radius: 10px;
+    /* box-shadow:  10px 15px 25px 1px rgba(0, 0, 0, 0.152) ; */
+}
+.box-item img
+{
+    position:absolute;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.2s;
+    /* border: 1px solid black; */
+}
+.frontimg:hover
+{
+    opacity: 0%;
+    transition: 0.2s;
+}
+/* .itembox
+{
+    margin-top: 100px;
+} */
+
+.contentexplore
+{
+    text-align: center;
+    position:absolute;
+    z-index: 1;
+    /* margin-left: 50%; */
+    /* position:absolute; */
+}
+.contentexplore h1
+{
+    font-size: calc(15px + 10vw);
+    color: white;
+    font-weight: 600;
+    font-family: Comic Sans MS;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+.contentexplore h1:hover
+{
+    /* font-size: 160px; */
+    color: white;
+    font-weight: 600;
+    font-family: Comic Sans MS;
+}
+.contentexplore a
+{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top:20px;
+}
+.box-item-info
+{
+    position:absolute;
+    font-family: Cascadia Code;
+    font-size:15px;
+    bottom: 1px;
+    opacity: 0.6;
+    transition: 0.2s;
+    /* top: 1px;  */
+}
+.box-item-info b
+{
+    color: rgb(255, 0, 0);
+    margin-left:90px ;
+}
+.box-item-info:hover
+{
+    opacity: 1;
+    transform: translateY(-10px);
+}
