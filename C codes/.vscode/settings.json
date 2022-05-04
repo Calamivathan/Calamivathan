@@ -1,0 +1,8 @@
+{
+    "workbench.preferredDarkColorTheme": "Default High Contrast",
+    "files.associations": {
+        "tempCodeRunnerFile.C": "cpp",
+        "extern.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
