@@ -1,0 +1,51 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #000;
+}
+.main-box
+{
+    margin: auto;
+    border-radius: 20px;
+    background:url("https://i.pinimg.com/originals/18/0f/79/180f79053ea4dc4fa90151c1f92277d2.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-wrap:wrap;
+    border: 0;
+}
+.nav-bar1-item
+{
+    text-align: center;
+}
+.nav-bar1-item a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.nav-bar1-item li
+{
+    list-style:none;
+    font-size:calc(3px + 3vw);
+    padding: 20px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    transition: 0.3s;
+}
+.nav-bar1-item li:hover
+{
+    list-style:none;
+    font-size:calc(2px + 3vw);
+    padding: 20px;
+    transform: translateY(-10px);
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+}
