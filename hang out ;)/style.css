@@ -1,0 +1,18 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+.myvideo
+{
+display: flex;
+flex-wrap:wrap;
+flex-direction: row;
+width: 50%;
+height: 50%;
+}
+body{
+    background-color: black;
+display: flex;
+flex-wrap: wrap;
+}
