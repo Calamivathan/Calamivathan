@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.pages{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.section-bg-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+}
+.section-bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;  
+}
+#section-page-1{
+    color: rgb(0, 0, 0);
+}
+#section-page-2{
+    background-color: rgb(255, 255, 255);
+    height: 200vh;
+}
+#section-page-4{
+    background-color: rgb(56, 56, 56);
+}
+
+#in-the-india{
+    font-size: 25px;
+}
+#locat{
+    font-size: 35px;
+}
+.mid-location{
+    position: absolute;
+    top: 60%;
+}
+.mid-info{
+    font-size: 50px;
+    padding: 50px;
+    font-weight: 800;
+}
+.shape-paths{
+    position: absolute;
+}
+.shape{
+    width: 320px;
+    height: 200px;
+}
+.inner-text{
+    position: absolute;
+    padding: 15px;
+    padding-top: 20px;
+    color: white;
+}
+.flag-wrapper{
+    position: absolute;
+    left: 205px;
+    padding-top: 25px;
+}
+.inner-text{
+    /* padding-top: 15px; */
+    width: 200px;
+}
+#code-by-me{
+    font-size: 20px;
+}
+#nav-bar-text{
+    font-size:30px;
+}
+.inner-text{
+    font-size: 20px;
+}
+.menu
+{
+    /* position: fixed; */
+    margin: 10px 20px;
+    /* position: relative; */
+    display: flex;
+    justify-content:end;
+    align-items:end;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu li a
+{
+    text-decoration: none;
+    color: rgba(1, 1, 1, 0.691);
+    font-size: calc(5px + 2vw);
+    font-family: sans-serif;
+    margin: 0 15px;
+    display: inline-block;
+    opacity: 0.60;
+}
+.menu li a:hover
+{
+    opacity: 100%;
+    transform: translateY(-10px) ;
+    transition: 0.50s;
+}  
+  /* Style the top-left-info span */
+  .top-left-info span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+.top-left-info{
+    width: 30vw;
+    position: absolute;
+    left: 0%;
+    padding: 10%;
+}
+.top-right-info{
+    position: absolute;
+    width: 30%;
+    right: 0%;
+    padding: 10%;
+    padding-top: 20%;
+}
+  /* Style the top-right-info span */
+  .top-right-info span {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  /* Style the about-links div */
+  .about-links {
+    bottom: 40%;
+    font-size:50px;
+    position: absolute;
+    width: 90vw;
+    height: 60vh;
+  }
+  
+  /* Style the hr elements */
+  hr {
+    height: 10px;
+    width: 70vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #ccc;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Change the hr element's color on hover */
+  hr:hover {
+    background-color: #000;
+  }
+/* .web-url{
+    width: 600px;
+    height: 400px;
+}.aim-url {
+    width: 600px;
+    height: 400px;
+}.homepage-url{
+    width: 600px;
+    height: 400px;
+} */
+.web-url,
+.aim-url,
+.homepage-url {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  right: 5%;
+}
+.web-url{
+    background-color: #c9c9c9;
+}
+.aim-url{
+    background-color: #616161;
+}
+.homepage-url{
+    background-color: rgb(0, 0, 0);
+}
+.web-url img,
+.aim-url img,
+.homepage-url img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit:contain;
+}
+.web-whatsapp-text,.aim-trainer-text,.homepage-design-text{
+position: absolute;
+left: 10%;
+}
+.web-whatsapp-text{
+    top:10%;
+}
+  /* Animate the about-links div's children on hover */
+  .web-whatsapp-text:hover,.aim-trainer-text:hover,.homepage-design-text:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ;
+  }
+.web-whatsapp,.aim-trainer,.homepage-design{
+    height: 70%;
+    width: 100%;
+}
+  /* Add padding between the web-whatsapp, aim-trainer, and homepage-design divs */
+  .section-heading {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .heading-text span {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .contact-button {
+    margin-top: 20px;
+  }
+  
+  .contact-button-wrapper {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-button-wrapper:hover {
+    background-color: #000;
+  }
+  
+  hr {
+    height: 2px;
+    width: 70%;
+    margin: 30px auto;
+    background-color: #ccc;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  .gmail-link,
+  .phone-link {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .gmail-wrapper,
+  .phone-wrapper {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+  }
+  
+  .version {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .version-text {
+    font-size: 14px;
+    color: #fafafa;
+  }
+  
+  .version-text span {
+    display: block;
+  }
+  
+  .social-links {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .social-navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-navbar li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-navbar a {
+    text-decoration: none;
+    color: #ebebeb;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-navbar a:hover {
+    color: #000;
+  }
+marquee{
+    font-size: 200px;
+    bottom: 0%;
+    position: absolute;
+}
+@media (max-width: 900px) {
+    #nav-bar-text{
+      font-size: 20px;
+    }
+    #code-by-me{
+        font-size: 10px;
+    }
+}
+@media (max-width: 768px) {
+    #nav-bar-text{
+      font-size: 14px;
+    }
+    #code-by-me{
+        font-size: 9px;
+    }
+  }
+@media (max-width: 576px) {
+    #nav-bar-text{
+      font-size: 12px;
+    }
+    #code-by-me{
+        font-size: 8px;
+    }
+}
